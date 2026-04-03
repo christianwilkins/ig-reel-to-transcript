@@ -128,7 +128,7 @@ If dependencies are missing, it falls back to caption/comments only and reports 
 ## Setup (optional for full transcripts)
 
 ```bash
-bash tools/reel-intel/setup.sh
+bash setup.sh
 ```
 
 This installs `yt-dlp` if Homebrew is available and gives next steps for Whisper.
@@ -136,32 +136,32 @@ This installs `yt-dlp` if Homebrew is available and gives next steps for Whisper
 ## Usage
 
 ```bash
-python3 tools/reel-intel/reel_intel.py "https://www.instagram.com/reel/XXXXX/"
+python3 reel_intel.py "https://www.instagram.com/reel/XXXXX/"
 ```
 
 Multiple links:
 
 ```bash
-python3 tools/reel-intel/reel_intel.py URL1 URL2 URL3
+python3 reel_intel.py URL1 URL2 URL3
 ```
 
 Save JSON + markdown reports:
 
 ```bash
-python3 tools/reel-intel/reel_intel.py URL1 URL2 \
+python3 reel_intel.py URL1 URL2 \
   --save-dir research/reels
 ```
 
 Try transcript:
 
 ```bash
-python3 tools/reel-intel/reel_intel.py URL --try-transcript
+python3 reel_intel.py URL --try-transcript
 ```
 
 JSON output only:
 
 ```bash
-python3 tools/reel-intel/reel_intel.py URL --json-only
+python3 reel_intel.py URL --json-only
 ```
 
 ## Recommended workflow in this chat
